@@ -2,6 +2,38 @@
 	<moduleName>High-Level Loot Rarified</moduleName>
 	<installSteps order="Explicit">
 
+		<!-- Welcome -->
+		<installStep name="High-Level Loot Rarified Core">
+			<optionalFileGroups order="Explicit">
+				<group name="Choose" type="SelectExactlyOne">
+					<plugins order="Explicit">
+						<plugin name="Welcome">
+							<description>
+								<![CDATA[]]>
+							</description>
+							<conditionFlags>
+								<flag name="core">Off</flag>
+								<flag name="aa">Off</flag>
+								<flag name="ha">Off</flag>
+								<flag name="obis">Off</flag>
+								<flag name="am">Off</flag>
+								<flag name="da">Off</flag>
+								<flag name="obis">Off</flag>
+							</conditionFlags>
+							<files>
+								<file source="core\High-level Loot Rarified.esp" destination="High-level Loot Rarified.esp" priority="0" />
+							</files>							
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Recommended"/>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+			</optionalFileGroups>
+		</installStep>
+		
 		<!-- Core -->
 		<installStep name="High-Level Loot Rarified Core">
 			<optionalFileGroups order="Explicit">
@@ -11,9 +43,6 @@
 							<description>
 								<![CDATA[This is the core of the mod that rarifies the vanilla game.]]>
 							</description>
-							<conditionFlags>
-								<flag name="core">On</flag>
-							</conditionFlags>
 							<files>
 								<file source="core\High-level Loot Rarified.esp" destination="High-level Loot Rarified.esp" priority="0" />
 							</files>							
@@ -37,9 +66,6 @@
 							<description>
 								<![CDATA[This addon rarifies Animated Armoury.]]>
 							</description>
-							<conditionFlags>
-								<flag name="aa">On</flag>
-							</conditionFlags>
 							<files>
 								<file source="addons\High-level Loot Rarified - Animated Armoury Addon.esp" destination="High-level Loot Rarified - Animated Armoury Addon.esp" priority="0" />
 							</files>							
@@ -61,9 +87,6 @@
 							<description>
 								<![CDATA[This addon rarifies Heavy Armory.]]>
 							</description>
-							<conditionFlags>
-								<flag name="ha">On</flag>
-							</conditionFlags>
 							<files>
 								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
 							</files>							
@@ -85,9 +108,6 @@
 							<description>
 								<![CDATA[This addon rarifies OBIS.]]>
 							</description>
-							<conditionFlags>
-								<flag name="ha">On</flag>
-							</conditionFlags>
 							<files>
 								<file source="addons\High-level Loot Rarified - OBIS Addon.esp" destination="aHigh-level Loot Rarified - OBIS Addon.esp" priority="0" />
 							</files>							
@@ -123,7 +143,7 @@
 * The new animations from Animated Armoury will be applied to the new weapons from Heavy Armory]]>								
 							</description>
 							<conditionFlags>
-								<flag name="core">On</flag>
+								<flag name="tweaks">On</flag>
 							</conditionFlags>
 							<files>
 								<file source="tweaks\Animated Armory - Heavy Armory tweaks.esp" destination="Animated Armory - Heavy Armory tweaks.esp" priority="0" />
@@ -139,73 +159,22 @@
 			</optionalFileGroups>
 		</installStep>
 
-
-
-
-
-
-
-		<!-- Welcome --> 
-		<installStep name="Welcome">
+		<!-- Patches -->
+		<installStep name="High-Level Loot Rarified Patches">
 			<optionalFileGroups order="Explicit">
-				<group name="Do you use Unofficial Skyrim Special Edition Patch" type="SelectExactlyOne">
+				<group name="Choose the mods to install patches for" type="SelectAny">
 					<plugins order="Explicit">
-						<plugin name="Yes">
-							<description>
-								<![CDATA[These patches are meant to be used with the STEP build Dread's Skyrim Build.
-IMPORTANT! The Unofficial Skyrim Special Edition Patch is required to use these patches.]]>
-							</description>
+						<plugin name="Ars Metallica">
 							<conditionFlags>
-								<flag name="ussep">On</flag>
-								<flag name="crf">Off</flag>
-								<flag name="brotherhoodofold">Off</flag>
-								<flag name="aos">Off</flag>
-								<flag name="uu">Off</flag>
-								<flag name="rls">Off</flag>
-								<flag name="blt">Off</flag>
-								<flag name="smoothshores">Off</flag>
-								<flag name="landscapeandwaterfixes">Off</flag>
-								<flag name="raid">Off</flag>
-								<flag name="obis">Off</flag>
-								<flag name="adamant">Off</flag>
-								<flag name="mysticism">Off</flag>
-								<flag name="graycowl">Off</flag>
-								<flag name="3dnpc">Off</flag>	
-								<flag name="moonpath">Off</flag>	
-								<flag name="wyrmstooth">Off</flag>	
-								<flag name="bandolier">Off</flag>	
-								<flag name="cloaks">Off</flag>	
-								<flag name="aetherius">Off</flag>	
-								<flag name="lenient">Off</flag>	
-								<flag name="rw2">Off</flag>
-								<flag name="oap">Off</flag>	
-								<flag name="imp">Off</flag>	
-								<flag name="bqo">Off</flag>	
-								<flag name="radiantblocker">Off</flag>	
-								<flag name="hbr">Off</flag>	
-								<flag name="ccsurvival">Off</flag>
-								<flag name="mundus">Off</flag>		
-								<flag name="lenient">Off</flag>	
-								<flag name="jks">Off</flag>
-								<flag name="kagrenac">Off</flag>	
-								<flag name="forgottencity">Off</flag>	
-								<flag name="tradebarter">Off</flag>
-								<flag name="silverarrows">Off</flag>	
-								<flag name="ha">Off</flag>		
-								<flag name="dawnguardarsenal">Off</flag>
-								<flag name="dawnguardhoods">Off</flag>		
-								<flag name="arsmetallica">Off</flag>		
-								<flag name="scoutarmortweaks">Off</flag>
-								<flag name="scoutarmor">Off</flag>	
-								<flag name="blacksacramenttweaks">Off</flag>							
-							</conditionFlags>
+								<flag name="am">On</flag>
+							</conditionFlags>						
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="Unofficial Skyrim Special Edition Patch.esp" state="Active"/>
+												<fileDependency file="Ars Metallica.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -213,41 +182,17 @@ IMPORTANT! The Unofficial Skyrim Special Edition Patch is required to use these 
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="No (quit)">
-							<description>
-								<![CDATA[These patches are meant to be used with the STEP build Dread's modlist.
-IMPORTANT! The Unofficial Skyrim Special Edition Patch is required to use these patches.]]>
-							</description>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-			</optionalFileGroups>
-		</installStep>
-
-		<!-- Foundational Mods -->
-		<installStep name="Foundational Mods">
-			<visible>
-				<dependencies operator="And">
-					<flagDependency flag="ussep" value="On"/>
-				</dependencies>
-			</visible>
-			<optionalFileGroups order="Explicit">
-				<group name="Choose" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Static Mesh Improvement Mod">
+						<plugin name="Dawnguard Arsenal">
 							<conditionFlags>
-								<flag name="smim">On</flag>
-							</conditionFlags>
+								<flag name="da">On</flag>
+							</conditionFlags>						
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="SMIM-SE-Merged-All.esp" state="Active"/>
+												<fileDependency file="DawnguardArsenal.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -255,154 +200,17 @@ IMPORTANT! The Unofficial Skyrim Special Edition Patch is required to use these 
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-					</plugins>
-				</group>
-			</optionalFileGroups>
-		</installStep>
-
-		<!-- Tweaks -->
-		<installStep name="Tweaks">
-			<visible>
-				<dependencies operator="And">
-					<flagDependency flag="ussep" value="On"/>
-				</dependencies>
-			</visible>
-			<optionalFileGroups order="Explicit">
-				<group name="STEP Tweaks" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Tweaks to core game">
-							<description>
-								<![CDATA[Tweaks:
-- Timescale reduced from 20 to 15
-- Chance of recovering arrors incresed from 33% to 50%
-- Greeting distance is reduced
-- Increased arrow speed
-- Fast travel speed fix. The correct ammount of time will pass as you fast travel.
-- Battle cry fix by NTense (Skipped if Aetherius is installed) (open permissions) https://www.nexusmods.com/skyrimspecialedition/mods/12133
-- Don't talk with your mouth full (open permissions) https://www.nexusmods.com/skyrimspecialedition/mods/17715
-- NPC's moves further away and reacts faster when they are in the way
-- No spinning death animation]]>
-							</description>
+						<plugin name="High-Level Loot Rarified - Animated Armoury addon">
 							<conditionFlags>
-								<flag name="tweakscore">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="ENB Tweaks" type="SelectExactlyOne">
-					<plugins order="Explicit">
-						<plugin name="A Cathedralist's ENB - Stronger light sources">
-							<description>
-								<![CDATA[Choose this if you use A Cathedralist's ENB with the default quality preset.
-These tweaks are edits to the settings files for A Cathedralist's ENB. It tweaks point lighting making all light sources emit more light. It is highly recommended since some light sources seems to produce almost no light using the default settings combined with the lighting mods in the guide.]]>
-							</description>
-							<conditionFlags>
-								<flag name="enbCathPoint">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="A Cathedralist's ENB High Quality - Stronger light sources">
-							<description>
-								<![CDATA[Choose this if you use A Cathedralist's ENB with the high quality preset.
-These tweaks are edits to the settings files for A Cathedralist's ENB. It tweaks point lighting making all light sources emit more light. It is highly recommended since some light sources seems to produce almost no light using the default settings combined with the lighting mods in the guide.]]>
-							</description>
-							<conditionFlags>
-								<flag name="enbCathHighPoint">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="A Cathedralist's ENB - Vanilla lighting">
-							<description>
-								<![CDATA[Choose this if you use A Cathedralist's ENB with the default quality preset.
-These tweaks are edits to the settings files for A Cathedralist's ENB. It resets lighting strength to vanilla. It is recommended if you want stealth to behave as intended. Darkness caused by ENB is not taken into account when calculating if enemies sees you or not.]]>
-							</description>
-							<conditionFlags>
-								<flag name="enbCathVanilla">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="A Cathedralist's ENB High Quality - Vanilla lighting">
-							<description>
-								<![CDATA[Choose this if you use A Cathedralist's ENB with the high quality preset.
-These tweaks are edits to the settings files for A Cathedralist's ENB. It resets lighting strength to vanilla. It is recommended if you want stealth to behave as intended. Darkness caused by ENB is not taken into account when calculating if enemies sees you or not.]]>
-							</description>
-							<conditionFlags>
-								<flag name="enbCathHighVanilla">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="None">
-							<description>
-								<![CDATA[Choose this if you do not use an ENB or do not want the tweaked ENB settings files.]]>
-							</description>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Uncapper settings" type="SelectExactlyOne">
-					<plugins order="Explicit">
-						<plugin name="Slower skill gain">
-							<description>
-								<![CDATA[Tweaks:
-- Skills capped at 100, like in the vanilla game
-- Skills level at 50%
-- 5 carry weight gained if stamina is increased when leveling up, like in the vanilla game
-- Legendary skills are turned off]]>
-							</description>
-							<files>
-								<file source="SKSE\Plugins\SkyrimUncapper.ini" destination="SKSE\Plugins\SkyrimUncapper.ini" priority="0" />
-							</files>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="Slower skill gain without grinding">
-							<description>
-								<![CDATA[This is a custom Skyrim Uncapper settings and my personal preference. It is recommended to tweak the Uncapper settings yourselves.
-Tweaks:
-- Skills capped at 100
-- Skills level at 50% speed except smithing, alchemy and pickpocket which level at 200% speed
-- 5 carry weight gained if stamina is increased when leveling up, like in vanilla
-- Legendary skills are turned off]]>
-							</description>
-							<files>
-								<file source="Uncapper ini alternatives\50% leveling + no grinding\SkyrimUncapper.ini" destination="SKSE\Plugins\SkyrimUncapper.ini" priority="0" />
-							</files>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-					</plugins>
-				</group>
-				<group name="Other Tweaks and Fixes" type="SelectAny">
-					<plugins order="Explicit">		
-						<plugin name="Creation Club Survival Mode - No carry weight penalty">
-							<description>
-								<![CDATA[This tweak removes the carry weight penalty from the Creation Club Survival Mode.]]>
-							</description>
-							<conditionFlags>
-								<flag name="nocarryweightpenalty">On</flag>
-							</conditionFlags>
+								<flag name="aa">On</flag>
+							</conditionFlags>						
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="ccqdrsse001-survivalmode.esl" state="Active"/>
+												<fileDependency file="NewArmoury.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -410,103 +218,24 @@ Tweaks:
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="EVG Conditional Idles - The Frozen North fix">
-							<description>
-								<![CDATA[This fix makes EVG conditional idles compatible with the Frozen North.]]>
-							</description>
+						<plugin name="High-Level Loot Rarified - Heavy Armoury addon">
 							<conditionFlags>
-								<flag name="evg-cold">On</flag>
-							</conditionFlags>
+								<flag name="ha">On</flag>
+							</conditionFlags>					
 							<typeDescriptor>
 								<dependencyType>
 									<defaultType name="Optional"/>
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="TheFrozenNorth.esp" state="Active"/>
+												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
 									</patterns>
 								</dependencyType>
 							</typeDescriptor>
-						</plugin>			
-						<plugin name="Experience settings">
-							<description>
-								<![CDATA[This is a settings file for the mod Experience. It enables experience gain from miscellaneous quests and from killing enemies. This also installs a patch for Experience to allow experience gain from killing enemies added by other mods included in this modlist.]]>
-							</description>
-							<files>
-								<file source="SKSE\Plugins\Experience.ini" destination="SKSE\Plugins\Experience.ini" priority="0" />
-								<file source="SKSE\Plugins\Experience\Races\experiencePatch.csv" destination="SKSE\Plugins\Experience\Races\experiencePatch.csv" priority="0" />
-							</files>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
 						</plugin>
-						<plugin name="Higher Bounty Rewards">
-							<description>
-<![CDATA[Alex's Higher Bounty Rewards lite is a mod that increases the rewrds for certain quests:
-
-- Bandit Camp: 1000 gold
-- Forsworn Camp: 1500 gold
-- Giants: 2500 gold
-- Dragons: 7500 gold
-
-Since the mod only alters values in four records in Skyrim.esm, it is impossible to patch without making the mod redundant. These patched plugins therefore replaces the original mod.
-
-Please download and endorse the original mod, but do not install it: https://www.nexusmods.com/skyrimspecialedition/mods/11294]]>
-							</description>
-							<conditionFlags>
-								<flag name="hbr">On</flag>
-							</conditionFlags>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="No leveled unique items">
-							<description>
-								<![CDATA[No more low level unique items. Unique items in Skyrim actually exists as different versions with different levels. If you discover an item when your character is at a lower level, you will get a lower level version of that item. This setting removes that feature. From now on you will get the most powerfull version of all unique items you find.]]>
-							</description>
-							<files>
-								<file source="df_NoLeveledUniqueItems.esp" destination="df_NoLeveledUniqueItems.esp" priority="0" />
-							</files>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>											
-						<plugin name="Slower leveling for Experience">
-							<description>
-								<![CDATA[This edits fXPLevelUpBase and fXPLevelUpMult to slow down character level gain to 50%. It is recommended to slow down skill gain using one of the uncapper settings provided above or creating a settings file yourself.]]>
-							</description>
-							<files>
-								<file source="df_SlowerLeveling.esp" destination="df_SlowerLeveling.esp" priority="0" />
-							</files>
-							<typeDescriptor>
-								<type name="Recommended"/>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="TDN Equipable Horns SE Tweaks">
-							<description>
-								<![CDATA[This makes all equipable horns from the mod free to craft.]]>
-							</description>
-							<files>
-								<file source="df_HornsPatch.esp" destination="df_HornsPatch.esp" priority="0" />
-							</files>
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="TDNEquipableHorns.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>	
-										
 					</plugins>
 				</group>
 			</optionalFileGroups>
@@ -518,18 +247,80 @@ Please download and endorse the original mod, but do not install it: https://www
 	<!-- ****************************** -->
 	<conditionalFileInstalls>
 		<patterns>
-			<!-- Interesting NPCs 3DNPC -->
+			<!-- Main + Addons -->
 			<pattern>
 				<dependencies operator="And">
-					<flagDependency flag="3dnpc" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="ha" value="On"/>
 				</dependencies>
 				<files>
-					<file source="df_3DNPC.esp" destination="df_3DNPC.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury and Heavy Armoury Patch.esp" destination="HLLR - Animated Armoury and Heavy Armoury Patch.esp" priority="0" />
+				</files>
+			</pattern>	
+
+			<!-- Ars Metallica -->
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="ha" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Animated Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory - Ars Metallica Patch.esp" priority="0" />
+				</files>
+			</pattern>	
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="am" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory - Ars Metallica Patch.esp" priority="0" />
+				</files>
+			</pattern>	
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="am" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" priority="0" />
+				</files>
+			</pattern>	
+
+			<!-- Dawnguard Arsenal -->
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="ha" value="Off"/>
+					<flagDependency flag="da" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
+				</files>
+			</pattern>	
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="da" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
 				</files>
 			</pattern>
-			<!-- ********************************************************** -->
-
-			
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="da" value="On"/>
+				</dependencies>
+				<files>
+					<file source="patches/HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" priority="0" />
+				</files>
+			</pattern>
 		</patterns>
 	</conditionalFileInstalls>
 </config>
