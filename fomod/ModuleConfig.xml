@@ -3,13 +3,13 @@
 	<installSteps order="Explicit">
 
 		<!-- Welcome -->
-		<installStep name="High-Level Loot Rarified Core">
+		<installStep name="Welcome">
 			<optionalFileGroups order="Explicit">
 				<group name="Choose" type="SelectExactlyOne">
 					<plugins order="Explicit">
 						<plugin name="Welcome">
 							<description>
-								<![CDATA[]]>
+								<![CDATA[Welcome to the High-Level Loot Rarified installer.]]>
 							</description>
 							<conditionFlags>
 								<flag name="core">Off</flag>
@@ -138,7 +138,9 @@
 						<plugin name="Tweaks">
 							<description>
 								<![CDATA[This is a consistency tweak for Animated Armoury and Heavy Armory. It is created using a scipt by Wheredidit run: https://www.nexusmods.com/skyrimspecialedition/mods/19547
-* Rebalances Animated Armoury and Heavy Armoury against both each other as well as against vanilla Skyrim. 
+
+The tweak includes the following changes:
+* It rebalances Animated Armoury and Heavy Armoury against both each other as well as against vanilla Skyrim. 
 * The Halbards from Heavy Armory, which are shorter than Halbards from Animated Armory, will be renamed to Pole Axes (which is a real thing). 
 * The new animations from Animated Armoury will be applied to the new weapons from Heavy Armory]]>								
 							</description>
