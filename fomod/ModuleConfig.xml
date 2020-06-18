@@ -109,7 +109,7 @@
 								<![CDATA[This addon rarifies OBIS.]]>
 							</description>
 							<files>
-								<file source="addons\High-level Loot Rarified - OBIS Addon.esp" destination="aHigh-level Loot Rarified - OBIS Addon.esp" priority="0" />
+								<file source="addons\High-level Loot Rarified - OBIS Addon.esp" destination="High-level Loot Rarified - OBIS Addon.esp" priority="0" />
 							</files>							
 							<typeDescriptor>
 								<dependencyType>
@@ -254,7 +254,7 @@
 					<flagDependency flag="ha" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Heavy Armoury Patch.esp" destination="HLLR - Animated Armoury and Heavy Armoury Patch.esp" priority="0" />
+					<file source="patches\HLLR - Animated Armoury and Heavy Armoury Patch.esp" destination="HLLR - Animated Armoury and Heavy Armoury Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 
@@ -266,7 +266,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches\HLLR - Animated Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -276,7 +276,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches\HLLR - Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -286,7 +286,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches\HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Animated Armory and Heavy Armory - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 
@@ -298,7 +298,7 @@
 					<flagDependency flag="da" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
+					<file source="patches\HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -308,7 +308,7 @@
 					<flagDependency flag="da" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
+					<file source="patches\HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -318,7 +318,7 @@
 					<flagDependency flag="da" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" priority="0" />
+					<file source="patches\HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" priority="0" />
 				</files>
 			</pattern>
 		</patterns>
