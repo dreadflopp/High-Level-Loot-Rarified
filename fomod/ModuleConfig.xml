@@ -135,14 +135,15 @@
 			<optionalFileGroups order="Explicit">
 				<group name="Choose" type="SelectAny">
 					<plugins order="Explicit">
-						<plugin name="Tweaks">
+						<plugin name="Animated Armour and Heavy Armory tweaks">
 							<description>
 								<![CDATA[This is a consistency tweak for Animated Armoury and Heavy Armory. It is created using a scipt by Wheredidit run: https://www.nexusmods.com/skyrimspecialedition/mods/19547
 
 The tweak includes the following changes:
-* It rebalances Animated Armoury and Heavy Armoury against both each other as well as against vanilla Skyrim. 
-* The Halbards from Heavy Armory, which are shorter than Halbards from Animated Armory, will be renamed to Pole Axes (which is a real thing). 
-* The new animations from Animated Armoury will be applied to the new weapons from Heavy Armory]]>								
+
+- Rebalancing of Animated Armoury and Heavy Armoury against both each other as well as against vanilla Skyrim. 
+- The Halbards from Heavy Armory, which are shorter than Halbards from Animated Armory, will be renamed to Pole Axes (which is a real thing). 
+- The new animations from Animated Armoury will be applied to the new weapons from Heavy Armory]]>								
 							</description>
 							<conditionFlags>
 								<flag name="tweaks">On</flag>
@@ -167,6 +168,9 @@ The tweak includes the following changes:
 				<group name="Choose the mods to install patches for" type="SelectAny">
 					<plugins order="Explicit">
 						<plugin name="Ars Metallica">
+							<description>
+								<![CDATA[This patch will patch Ars Metallicas leveled list against the other selected mods. It will also add breakdown recipes for Animated Armoury and Heavy Armory if these addons are selected.]]>
+							</description>
 							<conditionFlags>
 								<flag name="am">On</flag>
 							</conditionFlags>						
@@ -185,6 +189,9 @@ The tweak includes the following changes:
 							</typeDescriptor>
 						</plugin>
 						<plugin name="Dawnguard Arsenal">
+							<description>
+								<![CDATA[Patches Dawnguard Arsenal's leveled list against the other selected mods.]]>
+							</description>
 							<conditionFlags>
 								<flag name="da">On</flag>
 							</conditionFlags>						
@@ -203,6 +210,9 @@ The tweak includes the following changes:
 							</typeDescriptor>
 						</plugin>
 						<plugin name="High-Level Loot Rarified - Animated Armoury addon">
+							<description>
+								<![CDATA[Patches Animated Armoury Addon's leveled list against the other selected mods.]]>
+							</description>
 							<conditionFlags>
 								<flag name="aa">On</flag>
 							</conditionFlags>						
@@ -221,6 +231,9 @@ The tweak includes the following changes:
 							</typeDescriptor>
 						</plugin>
 						<plugin name="High-Level Loot Rarified - Heavy Armoury addon">
+							<description>
+								<![CDATA[Patches Heavy Armoury Addon's leveled list against the other selected mods.]]>
+							</description>
 							<conditionFlags>
 								<flag name="ha">On</flag>
 							</conditionFlags>					
