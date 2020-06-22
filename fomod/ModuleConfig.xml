@@ -13,6 +13,8 @@
 							</description>
 							<conditionFlags>
 								<flag name="core">Off</flag>
+								<flag name="aaaddon">Off</flag>
+								<flag name="haaddon">Off</flag>
 								<flag name="aa">Off</flag>
 								<flag name="ha">Off</flag>
 								<flag name="obis">Off</flag>
@@ -66,6 +68,9 @@
 							<description>
 								<![CDATA[This addon rarifies Animated Armoury.]]>
 							</description>
+							<conditionFlags>
+								<flag name="aaaddon">On</flag>
+							</conditionFlags>
 							<files>
 								<file source="addons\High-level Loot Rarified - Animated Armoury Addon.esp" destination="High-level Loot Rarified - Animated Armoury Addon.esp" priority="0" />
 							</files>							
@@ -87,6 +92,9 @@
 							<description>
 								<![CDATA[This addon rarifies Heavy Armory.]]>
 							</description>
+							<conditionFlags>
+								<flag name="haaddon">On</flag>
+							</conditionFlags>
 							<files>
 								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
 							</files>							
@@ -132,6 +140,12 @@
 
 		<!-- Tweaks -->
 		<installStep name="High-Level Loot Rarified Tweaks">
+			<visible>
+				<dependencies operator="And">
+					<flagDependency flag="aaaddon" value="On"/>
+					<flagDependency flag="haaddon" value="On"/>
+				</dependencies>
+			</visible>
 			<optionalFileGroups order="Explicit">
 				<group name="Choose" type="SelectAny">
 					<plugins order="Explicit">
@@ -222,7 +236,8 @@ The tweak includes the following changes:
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="NewArmoury.esp" state="Active"/>
+												<!--<fileDependency file="NewArmoury.esp" state="Active"/>-->
+												<flagDependency flag="aaaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -243,7 +258,8 @@ The tweak includes the following changes:
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
+												<!--<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>-->
+												<flagDependency flag="haaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
