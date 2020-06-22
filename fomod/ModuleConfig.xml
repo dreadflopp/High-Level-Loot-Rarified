@@ -236,7 +236,6 @@ The tweak includes the following changes:
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<!--<fileDependency file="NewArmoury.esp" state="Active"/>-->
 												<flagDependency flag="aaaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
@@ -258,7 +257,6 @@ The tweak includes the following changes:
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<!--<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>-->
 												<flagDependency flag="haaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
@@ -345,7 +343,7 @@ The tweak includes the following changes:
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="ha" value="On"/>
 					<flagDependency flag="da" value="On"/>
 				</dependencies>
 				<files>
