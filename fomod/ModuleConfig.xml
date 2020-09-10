@@ -162,9 +162,7 @@ The tweak includes the following changes:
 								<file source="tweaks\Animated Armory - Heavy Armory tweaks.esp" destination="Animated Armory - Heavy Armory tweaks.esp" priority="0" />
 							</files>							
 							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Recommended"/>
-								</dependencyType>
+								<type name="Recommended"/>
 							</typeDescriptor>
 						</plugin>
 					</plugins>
