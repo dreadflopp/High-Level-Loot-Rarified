@@ -26,9 +26,7 @@
 								<file source="core\High-level Loot Rarified.esp" destination="High-level Loot Rarified.esp" priority="0" />
 							</files>							
 							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Recommended"/>
-								</dependencyType>
+								<type name="Recommended"/>
 							</typeDescriptor>
 						</plugin>
 					</plugins>
@@ -49,9 +47,7 @@
 								<file source="core\High-level Loot Rarified.esp" destination="High-level Loot Rarified.esp" priority="0" />
 							</files>							
 							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Recommended"/>
-								</dependencyType>
+								<type name="Recommended"/>
 							</typeDescriptor>
 						</plugin>
 					</plugins>
