@@ -1,4 +1,4 @@
-﻿<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://github.com/dreadflopp/fomod-schema/blob/master/ModuleConfig.xsd">
+﻿<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://qconsulting.ca/fo3/ModConfig5.0.xsd">
 	<moduleName>High-Level Loot Rarified</moduleName>
 	<installSteps order="Explicit">
 
