@@ -62,7 +62,7 @@
 					<plugins order="Explicit">
 						<plugin name="High-Level Loot Rarified - Animated Armoury addon">
 							<description>
-								<![CDATA[This addon rarifies Animated Armoury.]]>
+								<![CDATA[This addon rarifies Animated Armoury - DAR Version.]]>
 							</description>
 							<conditionFlags>
 								<flag name="aaaddon">On</flag>
