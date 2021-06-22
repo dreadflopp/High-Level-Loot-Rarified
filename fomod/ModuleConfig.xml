@@ -309,6 +309,8 @@
 	<!-- ****************************** -->
 	<!-- ****** Install patterns ****** -->
 	<!-- ****************************** -->
+	<!-- TODO: REMAKE PATTERNS -->
+
 	<conditionalFileInstalls>
 		<patterns>
 			<!-- Main + Addons -->
