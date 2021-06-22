@@ -125,7 +125,7 @@
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<fileDependency file="SkyrimSpearMechanic SE.esp" state="Active"/>
+												<fileDependency file="SkyrimSpearMechanic.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -322,7 +322,7 @@
 					<flagDependency flag="ssm" value="Off"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Heavy Armory Patch.esp" destination="patches/HLLR - Animated Armoury and Heavy Armory Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury and Heavy Armory Patch.esp" destination="HLLR - Animated Armoury and Heavy Armory Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -333,7 +333,7 @@
 					<flagDependency flag="ssm" value="Off"/>
 				</dependencies>
 				<files>
-					<file source="" destination="" priority="0" />
+					<file source="patches\HLLR - Animated Armoury and Heavy Armory Lite Patch.esp" destination="HLLR - Animated Armoury and Heavy Armory Lite Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -344,7 +344,7 @@
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic Patch.esp" destination="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic Patch.esp" destination="HLLR - Animated Armoury and Skyrim Spear Mechanic Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -355,7 +355,7 @@
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic.esp" destination="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic.esp" destination="HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -366,7 +366,7 @@
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -377,7 +377,7 @@
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" destination="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" destination="HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" priority="0" />
 				</files>
 			</pattern>	
 			<pattern>
@@ -388,7 +388,7 @@
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="patches/HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
 				</files>
 			</pattern>	
 
@@ -402,7 +402,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" destination="patches/HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -414,7 +414,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" destination="patches/HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" destination="HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 
@@ -427,7 +427,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory - Ars Metallica Patch.esp" destination="patches/HLLR - Heavy Armory - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -439,7 +439,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory -  Ars Metallica patch.esp" destination="patches/HLLR - Animated armoury and Heavy Armory -  Ars Metallica patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury and Heavy Armory -  Ars Metallica patch.esp" destination="HLLR - Animated armoury and Heavy Armory -  Ars Metallica patch.esp" priority="0" />
 				</files>
 			</pattern>
 
@@ -452,7 +452,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury - Ars Metallica Patch.esp" destination="patches/HLLR - Animated Armoury - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury - Ars Metallica Patch.esp" destination="HLLR - Animated Armoury - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 
@@ -465,7 +465,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -477,7 +477,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 
@@ -490,7 +490,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -502,7 +502,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Animated armoury Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Animated armoury Heavy Armory and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -513,7 +513,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Animated Armoury and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -525,7 +525,7 @@
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="patches/HLLR - Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
+					<file source="patches/HLLR - Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
 				</files>
 			</pattern>
 
@@ -539,7 +539,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Animated Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -551,7 +551,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory -  Blacksmith patch.esp" destination="patches/HLLR - Animated armoury and Heavy Armory -  Blacksmith patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury and Heavy Armory -  Blacksmith patch.esp" destination="HLLR - Animated armoury and Heavy Armory -  Blacksmith patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -563,7 +563,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Animated Armoury Heavy Armoury and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -575,7 +575,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -587,7 +587,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" destination="patches/HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" destination="HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -599,7 +599,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
+					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
@@ -611,7 +611,7 @@
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
-					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
+					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 		</patterns>
