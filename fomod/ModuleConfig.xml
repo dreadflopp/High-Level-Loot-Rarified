@@ -14,13 +14,17 @@
 							<conditionFlags>
 								<flag name="core">Off</flag>
 								<flag name="aaaddon">Off</flag>
-								<flag name="haaddon">Off</flag>
+								<flag name="hafulladdon">Off</flag>
+								<flag name="haliteaddon">Off</flag>
 								<flag name="aa">Off</flag>
-								<flag name="ha">Off</flag>
+								<flag name="hafull">Off</flag>
+								<flag name="halite">Off</flag>
 								<flag name="obis">Off</flag>
 								<flag name="am">Off</flag>
 								<flag name="da">Off</flag>
 								<flag name="obis">Off</flag>
+								<flag name="ssm">Off</flag>
+								<flag name="ssmaddon">Off</flag>
 							</conditionFlags>
 							<files>
 								<file source="core\High-level Loot Rarified.esp" destination="High-level Loot Rarified.esp" priority="0" />
@@ -84,30 +88,6 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="High-Level Loot Rarified - Heavy Armoury addon">
-							<description>
-								<![CDATA[This addon rarifies Heavy Armory.]]>
-							</description>
-							<conditionFlags>
-								<flag name="haaddon">On</flag>
-							</conditionFlags>
-							<files>
-								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
-							</files>							
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
 						<plugin name="High-Level Loot Rarified - OBIS addon">
 							<description>
 								<![CDATA[This addon rarifies OBIS.]]>
@@ -129,40 +109,80 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-					</plugins>
-				</group>
-			</optionalFileGroups>
-		</installStep>
-
-		<!-- Tweaks -->
-		<installStep name="High-Level Loot Rarified Tweaks">
-			<visible>
-				<dependencies operator="And">
-					<flagDependency flag="aaaddon" value="On"/>
-					<flagDependency flag="haaddon" value="On"/>
-				</dependencies>
-			</visible>
-			<optionalFileGroups order="Explicit">
-				<group name="Choose" type="SelectAny">
-					<plugins order="Explicit">
-						<plugin name="Animated Armour and Heavy Armory tweaks">
+						<plugin name="High-Level Loot Rarified - Skyrim Spear Mechanic addon">
 							<description>
-								<![CDATA[This is a consistency tweak for Animated Armoury and Heavy Armory. It is created using a scipt by Wheredidit run: https://www.nexusmods.com/skyrimspecialedition/mods/19547
-
-The tweak includes the following changes:
-
-- Rebalancing of Animated Armoury and Heavy Armoury against both each other as well as against vanilla Skyrim. 
-- The Halbards from Heavy Armory, which are shorter than Halbards from Animated Armory, will be renamed to Pole Axes (which is a real thing). 
-- The new animations from Animated Armoury will be applied to the new weapons from Heavy Armory]]>								
+								<![CDATA[This addon rarifies Skyrim Spear Mechanic.]]>
 							</description>
 							<conditionFlags>
-								<flag name="tweaks">On</flag>
+								<flag name="ssmaddon">On</flag>
 							</conditionFlags>
 							<files>
-								<file source="tweaks\Animated Armory - Heavy Armory tweaks.esp" destination="Animated Armory - Heavy Armory tweaks.esp" priority="0" />
+								<file source="addons\High-Level Loot Rarified - Skyrim Spear Mechanic Addon.esp" destination="High-Level Loot Rarified - Skyrim Spear Mechanic Addon.esp" priority="0" />
 							</files>							
 							<typeDescriptor>
-								<type name="Recommended"/>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="SkyrimSpearMechanic SE.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+					</plugins>
+				</group>
+				<group name="Choose" type="SelectAtMostOne">
+					<plugins order="Explicit">
+						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
+							<description>
+								<![CDATA[This addon rarifies Heavy Armory - Full version.]]>
+							</description>
+							<conditionFlags>
+								<flag name="hafulladdon">On</flag>
+							</conditionFlags>
+							<files>
+								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
+							</files>							
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="High-Level Loot Rarified - Heavy Armoury Lite addon">
+							<description>
+								<![CDATA[This addon rarifies Heavy Armory - Lite version.]]>
+							</description>
+							<conditionFlags>
+								<flag name="haliteaddon">On</flag>
+							</conditionFlags>
+							<files>
+								<file source="addons\High-Level Loot Rarified - Heavy Armory Lite Addon.esp" destination="High-level Loot Rarified - Heavy Armory Lite Addon.esp" priority="0" />
+							</files>							
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
 							</typeDescriptor>
 						</plugin>
 					</plugins>
@@ -177,7 +197,7 @@ The tweak includes the following changes:
 					<plugins order="Explicit">
 						<plugin name="Ars Metallica">
 							<description>
-								<![CDATA[This patch will patch Ars Metallicas leveled list against the other selected mods. It will also add breakdown recipes for Animated Armoury and Heavy Armory if these addons are selected.]]>
+								<![CDATA[This patch will patch Ars Metallicas leveled list against the other selected mods. It will also add breakdown recipes for Animated Armoury, Heavy Armory and Skyrim Spear Mechanic if these addons are selected.]]>
 							</description>
 							<conditionFlags>
 								<flag name="am">On</flag>
@@ -189,27 +209,6 @@ The tweak includes the following changes:
 										<pattern>
 											<dependencies operator="And">
 												<fileDependency file="Ars Metallica.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="Dawnguard Arsenal">
-							<description>
-								<![CDATA[Patches Dawnguard Arsenal's leveled list against the other selected mods.]]>
-							</description>
-							<conditionFlags>
-								<flag name="da">On</flag>
-							</conditionFlags>						
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="DawnguardArsenal.esp" state="Active"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -238,12 +237,12 @@ The tweak includes the following changes:
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="High-Level Loot Rarified - Heavy Armoury addon">
+						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
 							<description>
-								<![CDATA[Patches Heavy Armoury Addon's leveled list against the other selected mods.]]>
+								<![CDATA[Patches Heavy Armoury - Full Addon's leveled list against the other selected mods.]]>
 							</description>
 							<conditionFlags>
-								<flag name="ha">On</flag>
+								<flag name="hafull">On</flag>
 							</conditionFlags>					
 							<typeDescriptor>
 								<dependencyType>
@@ -251,7 +250,49 @@ The tweak includes the following changes:
 									<patterns>
 										<pattern>
 											<dependencies operator="And">
-												<flagDependency flag="haaddon" value="On"/>
+												<flagDependency flag="hafulladdon" value="On"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="High-Level Loot Rarified - Heavy Armoury Lite addon">
+							<description>
+								<![CDATA[Patches Heavy Armoury - Lite Addon's leveled list against the other selected mods.]]>
+							</description>
+							<conditionFlags>
+								<flag name="halite">On</flag>
+							</conditionFlags>					
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<flagDependency flag="haliteaddon" value="On"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
+						<plugin name="High-Level Loot Rarified - Skyrim Spear Mechanic addon">
+							<description>
+								<![CDATA[Patches Skyrim Spear Mechanic Addon's leveled list against the other selected mods.]]>
+							</description>
+							<conditionFlags>
+								<flag name="ssm">On</flag>
+							</conditionFlags>					
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<flagDependency flag="ssmaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -274,7 +315,7 @@ The tweak includes the following changes:
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
 				</dependencies>
 				<files>
 					<file source="patches\HLLR - Animated Armoury and Heavy Armoury Patch.esp" destination="HLLR - Animated Armoury and Heavy Armoury Patch.esp" priority="0" />
@@ -285,7 +326,7 @@ The tweak includes the following changes:
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="ha" value="Off"/>
+					<flagDependency flag="hafull" value="Off"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
@@ -295,7 +336,7 @@ The tweak includes the following changes:
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
@@ -305,7 +346,7 @@ The tweak includes the following changes:
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="ha" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
 				<files>
@@ -313,35 +354,258 @@ The tweak includes the following changes:
 				</files>
 			</pattern>	
 
-			<!-- Dawnguard Arsenal -->
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="ha" value="Off"/>
-					<flagDependency flag="da" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches\HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
-				</files>
-			</pattern>	
+
+
+			<!-- ars metallica -->
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="ha" value="On"/>
-					<flagDependency flag="da" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
 				</dependencies>
 				<files>
-					<file source="patches\HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" destination="HLLR - Heavy Armoury and Dawnguard Arsenal Patch.esp" priority="0" />
+					<file source="" destination="" priority="0" />
 				</files>
 			</pattern>
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="ha" value="On"/>
-					<flagDependency flag="da" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
 				</dependencies>
 				<files>
-					<file source="patches\HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" destination="HLLR - Animated Armoury Heavy Armory and Dawnguard Arsenal Patch.esp" priority="0" />
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="Off"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="On"/>
+					<flagDependency flag="hllr" value="Off"/>
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+
+			<!-- Blacksmith patces == (NOT CCOR AND NOT ArsMetallica) -->
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="Off"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="Off"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="Off"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="On"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>	
+					<flagDependency flag="hllr" value="Off"/>				
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
+				</files>
+			</pattern>
+			<pattern>
+				<dependencies operator="And">
+					<flagDependency flag="lvl" value="On"/>
+					<flagDependency flag="aa" value="Off"/>
+					<flagDependency flag="hafull" value="On"/>
+					<flagDependency flag="ha-lite" value="On"/>
+					<flagDependency flag="ssm" value="On"/>
+					<flagDependency flag="am" value="Off"/>
+					<flagDependency flag="ccor" value="Off"/>		
+					<flagDependency flag="hllr" value="Off"/>			
+				</dependencies>
+				<files>
+					<file source="" destination="" priority="0" />
 				</files>
 			</pattern>
 		</patterns>
