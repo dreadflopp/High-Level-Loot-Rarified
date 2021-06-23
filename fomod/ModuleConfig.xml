@@ -509,6 +509,7 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="Off"/>
+					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
