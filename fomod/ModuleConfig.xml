@@ -139,7 +139,7 @@
 					<plugins order="Explicit">
 						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
 							<description>
-								<![CDATA[This addon rarifies Heavy Armory - Full version.]]>
+								<![CDATA[This addon rarifies Heavy Armory.]]>
 							</description>
 							<conditionFlags>
 								<flag name="hafulladdon">On</flag>
@@ -160,31 +160,7 @@
 									</patterns>
 								</dependencyType>
 							</typeDescriptor>
-						</plugin>
-						<plugin name="High-Level Loot Rarified - Heavy Armoury Lite addon">
-							<description>
-								<![CDATA[This addon rarifies Heavy Armory - Lite version.]]>
-							</description>
-							<conditionFlags>
-								<flag name="haliteaddon">On</flag>
-							</conditionFlags>
-							<files>
-								<file source="addons\High-Level Loot Rarified - Heavy Armory Lite Addon.esp" destination="High-level Loot Rarified - Heavy Armory Lite Addon.esp" priority="0" />
-							</files>							
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
+						</plugin>						
 					</plugins>
 				</group>
 			</optionalFileGroups>
@@ -237,9 +213,9 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
+						<plugin name="High-Level Loot Rarified - Heavy Armoury addon">
 							<description>
-								<![CDATA[Patches Heavy Armoury - Full Addon's leveled list against the other selected mods.]]>
+								<![CDATA[Patches Heavy Armoury Addon's leveled list against the other selected mods.]]>
 							</description>
 							<conditionFlags>
 								<flag name="hafull">On</flag>
@@ -251,27 +227,6 @@
 										<pattern>
 											<dependencies operator="And">
 												<flagDependency flag="hafulladdon" value="On"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>
-						<plugin name="High-Level Loot Rarified - Heavy Armoury Lite addon">
-							<description>
-								<![CDATA[Patches Heavy Armoury - Lite Addon's leveled list against the other selected mods.]]>
-							</description>
-							<conditionFlags>
-								<flag name="halite">On</flag>
-							</conditionFlags>					
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<flagDependency flag="haliteaddon" value="On"/>
 											</dependencies>
 											<type name="Recommended"/>
 										</pattern>
@@ -318,7 +273,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="Off"/>
 				</dependencies>
 				<files>
@@ -329,18 +283,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="Off"/>
-				</dependencies>
-				<files>
-					<file source="patches\HLLR - Animated Armoury and Heavy Armory Lite Patch.esp" destination="HLLR - Animated Armoury and Heavy Armory Lite Patch.esp" priority="0" />
-				</files>
-			</pattern>	
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
@@ -351,7 +293,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
@@ -360,69 +301,21 @@
 			</pattern>
 			<pattern>
 				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
-				</files>
-			</pattern>	
-			<pattern>
-				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 				</dependencies>
 				<files>
 					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" destination="HLLR - Heavy Armory and Skyrim Spear Mechanic Patch.esp" priority="0" />
 				</files>
 			</pattern>	
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" destination="HLLR - Heavy Armoury Lite and Skyrim Spear Mechanic.esp" priority="0" />
-				</files>
-			</pattern>	
 
 			<!-- ars metallica -->
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="Off"/>
-					<flagDependency flag="am" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="Off"/>
-					<flagDependency flag="am" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" destination="HLLR - Animated armoury and Heavy Armory Lite - Ars Metallica Patch.esp" priority="0" />
-				</files>
-			</pattern>
 
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="Off"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -434,7 +327,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="Off"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -447,7 +339,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="Off"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -459,33 +350,7 @@
 			<pattern>
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-					<flagDependency flag="am" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-					<flagDependency flag="am" value="On"/>
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" destination="HLLR - Animated armoury Heavy Armory Lite and Skyrim Spear Mechanic - Ars Metallica Patch.esp" priority="0" />
-				</files>
-			</pattern>
-
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="Off"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -497,7 +362,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -509,7 +373,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -521,7 +384,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
 					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="On"/>
 				</dependencies>
@@ -535,7 +397,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
@@ -547,7 +408,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="Off"/>
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
@@ -559,7 +419,6 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="On"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
@@ -571,48 +430,11 @@
 				<dependencies operator="And">
 					<flagDependency flag="aa" value="Off"/>
 					<flagDependency flag="hafull" value="On"/>
-					<flagDependency flag="halite" value="Off"/>
 					<flagDependency flag="ssm" value="On"/>
 					<flagDependency flag="am" value="Off"/>					
 				</dependencies>
 				<files>
 					<file source="patches/HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Heavy Armory and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="Off"/>
-					<flagDependency flag="am" value="Off"/>					
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" destination="HLLR - Animated armoury and Heavy Armory Lite -  Blacksmith patch.esp" priority="0" />
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="On"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-					<flagDependency flag="am" value="Off"/>					
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Animated Armoury Heavy Armoury Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
-				</files>
-			</pattern>
-			<pattern>
-				<dependencies operator="And">
-					<flagDependency flag="aa" value="Off"/>
-					<flagDependency flag="hafull" value="Off"/>
-					<flagDependency flag="halite" value="On"/>
-					<flagDependency flag="ssm" value="On"/>
-					<flagDependency flag="am" value="Off"/>					
-				</dependencies>
-				<files>
-					<file source="patches/HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" destination="HLLR - Heavy Armory Lite and Skyrim Spear Mechanic - Blacksmith Patch.esp" priority="0" />
 				</files>
 			</pattern>
 		</patterns>
