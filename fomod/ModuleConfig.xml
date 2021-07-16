@@ -88,6 +88,30 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
+						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
+							<description>
+								<![CDATA[This addon rarifies Heavy Armory.]]>
+							</description>
+							<conditionFlags>
+								<flag name="hafulladdon">On</flag>
+							</conditionFlags>
+							<files>
+								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
+							</files>							
+							<typeDescriptor>
+								<dependencyType>
+									<defaultType name="Optional"/>
+									<patterns>
+										<pattern>
+											<dependencies operator="And">
+												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
+											</dependencies>
+											<type name="Recommended"/>
+										</pattern>
+									</patterns>
+								</dependencyType>
+							</typeDescriptor>
+						</plugin>
 						<plugin name="High-Level Loot Rarified - OBIS addon">
 							<description>
 								<![CDATA[This addon rarifies OBIS.]]>
@@ -133,34 +157,6 @@
 								</dependencyType>
 							</typeDescriptor>
 						</plugin>
-					</plugins>
-				</group>
-				<group name="Choose" type="SelectAtMostOne">
-					<plugins order="Explicit">
-						<plugin name="High-Level Loot Rarified - Heavy Armoury Full addon">
-							<description>
-								<![CDATA[This addon rarifies Heavy Armory.]]>
-							</description>
-							<conditionFlags>
-								<flag name="hafulladdon">On</flag>
-							</conditionFlags>
-							<files>
-								<file source="addons\High-level Loot Rarified - Heavy Armory Addon.esp" destination="High-level Loot Rarified - Heavy Armory Addon.esp" priority="0" />
-							</files>							
-							<typeDescriptor>
-								<dependencyType>
-									<defaultType name="Optional"/>
-									<patterns>
-										<pattern>
-											<dependencies operator="And">
-												<fileDependency file="PrvtI_HeavyArmory.esp" state="Active"/>
-											</dependencies>
-											<type name="Recommended"/>
-										</pattern>
-									</patterns>
-								</dependencyType>
-							</typeDescriptor>
-						</plugin>						
 					</plugins>
 				</group>
 			</optionalFileGroups>
